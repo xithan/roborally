@@ -10,16 +10,16 @@ Meteor.startup(function() {
   }
 });
 
-Router.route('/', {
-  name: 'home.page',
-  layoutTemplate: 'home',
-  action: function() {
-    mixpanel.track("Viewed home Page");
-    this.render();
-  }
-});
+// Router.route('/', {
+//   name: 'home.page',
+//   layoutTemplate: 'home',
+//   action: function() {
+//     mixpanel.track("Viewed home Page");
+//     this.render();
+//   }
+// });
 
-Router.route('/online', {
+Router.route('/', {
   name: 'gamelist.page',
   loadingTemplate: 'loading',
 
